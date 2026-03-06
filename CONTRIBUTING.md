@@ -1,38 +1,60 @@
-# Contributing
+# Contributing to json-toolkit-cli
 
-We welcome contributions! Here's how to get started:
+Contributions are welcome. Here is how to get started.
 
-## Quick Start
 
-1. Fork the repo
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/REPO_NAME.git`
-3. Install dependencies: `npm install`
-4. Create a branch: `git checkout -b feature/your-feature`
-5. Make your changes
-6. Run tests: `npm test`
-7. Run lint: `npm run lint`
-8. Commit: `git commit -m "feat: your feature description"`
-9. Push: `git push origin feature/your-feature`
-10. Open a Pull Request
+SETUP
 
-## Guidelines
+1. Fork the repo on GitHub
+2. Clone your fork
 
-- Write TypeScript (no `any` types)
-- Add tests for new features
-- Follow existing code style
-- Keep commits atomic and descriptive
-- Update README if adding new features
+```bash
+git clone https://github.com/YOUR_USERNAME/json-toolkit-cli.git
+cd json-toolkit-cli
+npm install
+```
 
-## Issues
+3. Create a feature branch
 
-- Use issue templates for bugs and feature requests
-- Search existing issues before creating new ones
-- Include reproduction steps for bugs
+```bash
+git checkout -b feature/your-feature
+```
 
-## Code of Conduct
+4. Make your changes, then run checks
 
-Be respectful and constructive. We're all here to build great tools.
+```bash
+npm run build
+npm test
+npm run lint
+```
 
----
+5. Commit, push, and open a Pull Request
 
-Built with ❤️ by [Zovo](https://zovo.one)
+```bash
+git commit -m "feat: describe your change"
+git push origin feature/your-feature
+```
+
+
+GUIDELINES
+
+- Write TypeScript. Avoid `any` types.
+- Add tests for new features.
+- Follow existing code style. Run `npm run format` before committing.
+- Keep commits atomic and descriptive.
+- Update the README if you add or change commands.
+
+
+REPORTING ISSUES
+
+- Use the issue templates for bugs and feature requests.
+- Search existing issues before creating new ones.
+- Include reproduction steps and environment details for bugs.
+
+
+CODE OF CONDUCT
+
+Be respectful and constructive. We are all here to build useful tools.
+
+
+Built by [theluckystrike](https://github.com/theluckystrike) | [zovo.one](https://zovo.one)
